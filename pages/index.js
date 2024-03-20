@@ -40,9 +40,7 @@ export const getStaticProps = async () => {
   // because this code normally executed during the build process
   // this code will not be executed on the server nor the client side
   // this method is very good when I have static data that does not change much
-  const client = await MongoClient.connect(
-    "mongodb+srv://mmraisi:Czd5L8g1pgK5bK8a@cluster-1.bpugdk4.mongodb.net/meetups?retryWrites=true&w=majority"
-  );
+  const client = await MongoClient.connect("");
 
   const db = client.db();
 
